@@ -30,8 +30,8 @@ class MainActivity : AppCompatActivity() {
         })
         personService.addListener(listener)
 
-        binding.recyclerView.layoutManager = manager // Назначение LayoutManager для RecyclerView
-        binding.recyclerView.adapter = adapter // Назначение адаптера для RecyclerView
+        binding.recyclerView.layoutManager = manager 
+        binding.recyclerView.adapter = adapter 
     }
 
     private val listener: PersonListener = {adapter.data = it}
